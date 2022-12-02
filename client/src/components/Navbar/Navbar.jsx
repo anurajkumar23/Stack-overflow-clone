@@ -2,14 +2,18 @@ import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import decode from 'jwt-decode'
+import { CgMenu, CgClose } from "react-icons/cg";
 
 import logo from '../../assets/logo.png'
 import search from '../../assets/search-solid.svg'
 import Avatar from '../../components/Avatar/Avatar'
 import './Navbar.css'
 import { setCurrentUser } from '../../actions/currentUser'
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [menuIcon, setMenuIcon] = useState();
+
     const dispatch = useDispatch()
     var User = useSelector((state) => (state.currentUserReducer))
     const navigate = useNavigate();
@@ -34,10 +38,21 @@ const Navbar = () => {
     return (
         <nav className='main-nav'>
             <div className='navbar'>
+            <CgMenu
+            name="menu-outline"
+            className="mobile-nav-icon"
+            onClick={() => setMenuIcon(true)}
+          />
+          <CgClose
+            name="close-outline"
+            className="mobile-nav-icon close-outline"
+            onClick={() => setMenuIcon(false)}
+          />   
+           
+          
                 <Link to='/' className='nav-item nav-logo'>
                     <img src={logo} alt='logo' />
                 </Link>
-                <Link to='/' className='nav-item nav-btn'>About</Link>
                 <Link to='/' className='nav-item nav-btn'>Products</Link>
                 <Link to='/' className='nav-item nav-btn'>For Teams</Link>
                 <form>
@@ -51,6 +66,9 @@ const Navbar = () => {
                         <button className='nav-item nav-links' onClick={handleLogout}>Log out</button>
                     </>
                 }
+                 <div className="mobile-navbar-btn">
+         
+                </div>
             </div>
         </nav>
     )

@@ -44,3 +44,14 @@
     background-color: rgb(225, 225, 225);
     border-right: solid 3px #ef8236;
 }
+@media (min-width: 992px) {
+    .side-nav-list{
+        display: none;
+      }
+}
+@media only screen and (max-width: 576px){ 
+    .left-sidebar{
+        display: none;
+    }
+
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import './LeftSidebar.css'
 import { NavLink } from 'react-router-dom'
 import Globe from  '../../assets/Globe.svg'
+import { Link } from 'react-router-dom'
 
 const LeftSidebar = () => {
     return (
@@ -22,6 +23,13 @@ const LeftSidebar = () => {
                     <NavLink to='/Users' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
                         <p>Users</p>
                     </NavLink>
+                    <NavLink to='/products' className='side-nav-links side-nav-list' activeclassname='active'>
+                        <p style={{paddingLeft: "10px"}}> Products </p>
+                    </NavLink>
+                    <NavLink to='/products' className='side-nav-links side-nav-list'   activeclassname='active'>
+                        <p style={{paddingLeft: "10px"}}> For Teams </p>
+                    </NavLink>
+                
                 </div>
             </nav>
         </div>

@@ -67,3 +67,12 @@
     border-radius: 2px;
     font-size: 13px;
 }
+
+@media (max-width: 992px) {
+    .widget{
+        display: none;
+      }
+      .widget-tags{
+        display: none;
+      }
+}

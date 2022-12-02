@@ -23,6 +23,7 @@ function App() {
         <AllRoutes />
       </Router >
     </div>
+    
   );
 }
 

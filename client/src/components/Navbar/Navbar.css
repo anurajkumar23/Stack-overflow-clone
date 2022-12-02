@@ -5,13 +5,15 @@
     border-top: solid 3px #ef8236;
     box-shadow: 0px 1px 5px #00000033;
     position: fixed;
-    z-index: 5;
+    z-index: 999;
     top: 0%;
     left: 0%;
     background-color: #f8f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
 }
 
 .navbar{
@@ -19,7 +21,7 @@
     min-width: 85%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .nav-logo{
@@ -58,6 +60,7 @@
     font-size: 13px;
     border: solid 1px #0000003e;
     border-radius: 3px;
+   
 }
 
 .navbar form .search-icon {
@@ -67,13 +70,34 @@
 }
 
 .nav-links{
-    padding: 7px 13px;
+    padding: 7px 7px;
     border: solid 1px blue;
+    position: relative;
     border-radius: 3px;
     background-color: #e7f8fe;
     cursor: pointer;
+    
 }
 
 .nav-links:hover{
     background-color: #d3e4eb;
 }
+
+ /* Responsiveness */
+
+ @media only screen and (max-width: 992px){
+  .main-nav,.navbar{
+    flex: 2;
+    }
+    .navbar form input{
+       min-width: 90%;
+  }
+  .nav-btn{
+    display: none;
+  }
+
+  }
+
+
+ 
+
