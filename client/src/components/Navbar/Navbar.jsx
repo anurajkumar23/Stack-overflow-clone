@@ -2,17 +2,17 @@ import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import decode from 'jwt-decode'
-import { CgMenu, CgClose } from "react-icons/cg";
 
+import icon from "../../assets/icon.png"
 import logo from '../../assets/logo.png'
 import search from '../../assets/search-solid.svg'
 import Avatar from '../../components/Avatar/Avatar'
 import './Navbar.css'
 import { setCurrentUser } from '../../actions/currentUser'
-import { useState } from 'react';
+import Navbutton from '../../Pages/navbutton/Navbutton'
 
 const Navbar = () => {
-    const [menuIcon, setMenuIcon] = useState();
+    
 
     const dispatch = useDispatch()
     var User = useSelector((state) => (state.currentUserReducer))
@@ -38,21 +38,17 @@ const Navbar = () => {
     return (
         <nav className='main-nav'>
             <div className='navbar'>
-            <CgMenu
-            name="menu-outline"
-            className="mobile-nav-icon"
-            onClick={() => setMenuIcon(true)}
-          />
-          <CgClose
-            name="close-outline"
-            className="mobile-nav-icon close-outline"
-            onClick={() => setMenuIcon(false)}
-          />   
+               
            
+           <Navbutton/>
           
                 <Link to='/' className='nav-item nav-logo'>
                     <img src={logo} alt='logo' />
                 </Link>
+                <Link to='/' className='nav-item nav-logo-2'>
+                    <img src={icon} alt='icon' />
+                </Link>
+
                 <Link to='/' className='nav-item nav-btn'>Products</Link>
                 <Link to='/' className='nav-item nav-btn'>For Teams</Link>
                 <form>
@@ -65,10 +61,10 @@ const Navbar = () => {
                         <Avatar backgroundColor='#009dff' px="10px" py="7px" borderRadius="50%" color='white'><Link to={`/Users/${User?.result?._id}`} style={{color:"white", textDecoration:'none'}}>{User.result.name.charAt(0).toUpperCase()}</Link></Avatar>
                         <button className='nav-item nav-links' onClick={handleLogout}>Log out</button>
                     </>
+                    
                 }
-                 <div className="mobile-navbar-btn">
-         
-                </div>
+                
+                
             </div>
         </nav>
     )

@@ -9,8 +9,9 @@ const Avatar = ({ children, backgroundColor, px, py, color, borderRadius, fontSi
         fontSize,
         textAlign: "center",
         cursor: cursor || null,
-        textDecoration: "none"
-    }
+        textDecoration: "none",
+        
+       }
 
     return (
         <div style={style}>
