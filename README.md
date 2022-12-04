@@ -30,6 +30,7 @@ To use the Avatar, [click here.](client/src/components/Avatar)
 ## Login-Signup-page
 
 - TODO: ScreenShots Below 👇
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/102934270/202521975-bc1cdfac-04d2-4ad1-aa0a-6a35fc073fe5.gif)
 
 ![Log in page](https://user-images.githubusercontent.com/102934270/202522150-62abeec0-97cf-4ecf-be36-796cbd1a2157.jpg)
@@ -47,6 +48,7 @@ To use the Login Signup, [click here.](client/src/pages/Auth)
 ## Right-Sidebar
 
 - TODO: ScreenShots Below 👇
+
 ![Right sidebar](https://user-images.githubusercontent.com/102934270/202745811-8dcaa4fa-a8cd-4781-95de-8009c4ad80a0.gif)
 
 - To use the Right-sidebar, [click here.](client/src/components/RightSidebar)
