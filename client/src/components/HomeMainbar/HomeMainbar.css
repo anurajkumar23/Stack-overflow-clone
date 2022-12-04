@@ -30,7 +30,7 @@
 }
 
 .display-question-container{
-    min-height: 80px;
+    min-height: 30px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -99,6 +99,13 @@
     .main-bar{
         width: 100% ;
     
+    }
+    .display-question-container{
+        width: 100%;
+    }
+    .display-question-details{
+       flex-shrink: initial;
+        padding: 0px 0px;
     }
 
 }

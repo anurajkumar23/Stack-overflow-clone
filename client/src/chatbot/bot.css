@@ -1,0 +1,37 @@
+.chatbot-2{
+    display: flex;
+   
+   /* position: fixed; */
+   top: -479px;
+   position: relative;
+}
+.bot{
+    position: relative;
+    top: -411px;
+}
+.display{
+    display: none;
+}
+.close{
+  position: relative;
+  top: -392px;
+  left: 330px;
+  weight: 500;
+  /* width: 100px; */
+  color: black;
+  /* size: 20px; */
+  z-index: 9999;
+}
+
+.chatbot-img{
+    width: 112px;
+    height: 95px;
+    position: relative;
+    z-index: 100;
+    /* top: -479px; */
+}
+@media only screen and (max-width: 992px){
+    .chatbot-2{
+        top: -114px;
+    }
+}
