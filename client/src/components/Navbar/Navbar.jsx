@@ -50,7 +50,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link to='/' className='nav-item nav-btn'>Products</Link>
-                <Link to='/' className='nav-item nav-btn'>For Teams</Link>
+                <a href='https://stackoverflow.co/teams/' className='nav-item nav-btn'>For Teams</a>
                 <form>
                     <input type="text" placeholder='Search...'/>
                     <img src={search} alt="search" width="18" className='search-icon'/>

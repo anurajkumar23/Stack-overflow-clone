@@ -30,9 +30,12 @@ const LeftSidebar = () => {
                     <NavLink to='/products' className='side-nav-links side-nav-list' activeclassname='active'>
                         <p style={{paddingLeft: "10px"}}> Products </p>
                     </NavLink>
-                    <NavLink to='/products' className='side-nav-links side-nav-list'   activeclassname='active'>
+                    <a href='https://stackoverflow.co/teams/' className='side-nav-links side-nav-list'   activeclassname='active'>
                         <p style={{paddingLeft: "10px"}}> For Teams </p>
-                    </NavLink>
+                    </a>
+                    <a href= "https://chattbook.netlify.app" className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
+                        <p> Community </p>
+                    </a>
                 
                 </div>
             </nav>

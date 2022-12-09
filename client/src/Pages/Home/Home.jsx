@@ -5,6 +5,7 @@ import LeftSidebar from '../../components/LeftSidebar/LeftSidebar'
 import RightSidebar from '../../components/RightSidebar/RightSidebar'
 import HomeMainbar from '../../components/HomeMainbar/HomeMainbar'
 import { Link } from 'react-router-dom'
+import Chatbot from '../../chatbot/Chatbot'
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
                
                 <HomeMainbar />
                 <RightSidebar />
+               
             </div>
         </div>
     )

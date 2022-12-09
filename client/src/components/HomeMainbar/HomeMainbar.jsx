@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useSelector} from 'react-redux'
 import './HomeMainbar.css'
 import QuestionList from './QuestionList'
+import Chatbot from '../../chatbot/Chatbot'
+
 
 const HomeMainbar = () => {
 
@@ -91,6 +93,8 @@ const HomeMainbar = () => {
                         <QuestionList questionsList={questionsList.data} />
                     </>
                 }
+                 <Chatbot/>
+                 
             </div>
         </div>
     )

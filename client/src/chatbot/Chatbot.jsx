@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import Aibot from '../assets/bot.png'
-import Bot from "./Bot"
+
 import ChatBot from "react-simple-chatbot";
 import { Segment } from "semantic-ui-react";
 import "./bot.css"
