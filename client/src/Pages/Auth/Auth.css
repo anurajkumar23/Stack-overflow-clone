@@ -1,5 +1,5 @@
 .auth-section{
-    min-height: 100vh;
+    height: 100vh;
     margin: 0% auto;
     background-color: #f1f2f3;
     display: flex;
@@ -22,6 +22,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* position: relative; */
+   
 }
 
 .auth-container-2 form{
@@ -31,6 +33,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    
     justify-content: space-evenly;
     box-shadow: 0 10px 25px rgb(0 0 0 / 5%),
      0 20px 48px rgb(0 0 0 / 5%),
@@ -42,6 +45,8 @@
     width: calc( 100% - 30px );
     border: solid 1px #0000003e;
     font-size: 13px;
+    /* width: 10%; */
+    
 }
 
 .auth-container-2 form label:nth-child(1) h4,
@@ -83,4 +88,36 @@
     border: none;
     font-size: 13px;
     cursor: pointer;
+}
+@media only screen and (max-width: 992px){
+    .auth-container-1{
+        position: relative;
+        top: 20px;
+       }
+   
+}
+@media only screen and (max-width: 778px){
+    .auth-container-1{
+        position: relative;
+        top: 47px;
+       }
+    .auth-section .auth-container-1{
+     position: relative;
+     top: 10px;
+     width: -20px;
+    }
+
+}
+@media only screen and (max-width: 576px){
+   
+    .auth-container-2{
+        position: relative;
+        top: 36px;
+
+        
+    }
+    
+    .auth-container-1{
+        display: none;
+    }
 }

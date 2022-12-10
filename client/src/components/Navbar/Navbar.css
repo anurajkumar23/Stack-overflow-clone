@@ -166,6 +166,14 @@
        
    }
   }
+  @media (max-width: 405px){
+   .navbar form{
+    left: -20px;
 
+   }
+   .navbar .nav-item .nav-links{
+    width: 15px;
+   }
+  }
  
 
