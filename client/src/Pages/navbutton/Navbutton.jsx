@@ -55,13 +55,20 @@ const Navbutton = () => {
               onClick={() => setMenuIcon(false)} >
               <p > Products </p>
             </NavLink>
-            <NavLink
-              to="/products"
+            <a href='https://stackoverflow.co/teams/'
               className="side-nav-links-2 side-nav-list-2"
               style={{textDecoration: "none",color: "black" }}
               onClick={() => setMenuIcon(false)} >
               <p> For Teams </p>
-            </NavLink>
+
+            </a>
+            <a href="https://chattbook.netlify.app"
+              className="side-nav-links-2 side-nav-list-2"
+              style={{textDecoration: "none",color: "black" }}
+              onClick={() => setMenuIcon(false)} >
+              <p> Community </p>
+
+            </a>
             <CgClose
                 name="close-outline"
                 className="mobile-nav-icon close-outline" 
