@@ -54,7 +54,7 @@ const Navbutton = () => {
               style={{textDecoration: "none",color: "black" }}
               onClick={() => setMenuIcon(false)} >
               <p > Products </p>
-            </NavLink>
+              </NavLink>
             <a href='https://stackoverflow.co/teams/'
               className="side-nav-links-2 side-nav-list-2"
               style={{textDecoration: "none",color: "black" }}
